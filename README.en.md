@@ -17,6 +17,12 @@ The [SteamCardExchange](https://www.steamcardexchange.net/) service displays bad
 
 This application parses prices **directly through your Steam account**, taking into account your local currency for accurate calculations.
 
+## 📸 Screenshots
+
+| ![Main Interface](screenshot1.png) | ![Settings Menu](screenshot2.png) |
+|:--:|:--:|
+| *Main Interface* | *Settings* |
+
 ## ✨ Features
 
 - Automated parsing using Selenium and Chrome
