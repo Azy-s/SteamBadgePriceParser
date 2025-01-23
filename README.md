@@ -52,7 +52,7 @@
 
 1. **Требования:**
    - Windows 7+
-   - [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework) или новее
+   - [.NET Framework 8.0](https://dotnet.microsoft.com/download/dotnet-framework) или новее
    - Google Chrome (последняя версия)
    - Установленный [ChromeDriver](https://chromedriver.chromium.org/) (совместимый с вашей версией Chrome)
 
