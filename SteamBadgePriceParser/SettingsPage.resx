@@ -1,0 +1,656 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema 
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="userDataTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9pt</value>
+  </data>
+  <data name="userDataTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>107, 23</value>
+  </data>
+  <data name="userDataTextBox.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 24</value>
+  </data>
+  <data name="userDataTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>259, 24</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="userDataTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;userDataTextBox.Name" xml:space="preserve">
+    <value>userDataTextBox</value>
+  </data>
+  <data name="&gt;&gt;userDataTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;userDataTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;userDataTextBox.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11.25pt</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 23</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 20</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>User Data</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="chooseButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="chooseButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9pt</value>
+  </data>
+  <data name="chooseButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>372, 23</value>
+  </data>
+  <data name="chooseButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 24</value>
+  </data>
+  <data name="chooseButton.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="chooseButton.Text" xml:space="preserve">
+    <value>Выбрать</value>
+  </data>
+  <data name="&gt;&gt;chooseButton.Name" xml:space="preserve">
+    <value>chooseButton</value>
+  </data>
+  <data name="&gt;&gt;chooseButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chooseButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;chooseButton.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11.25pt</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 58</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 20</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>User Name</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="userNameTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 12pt</value>
+  </data>
+  <data name="userNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>107, 59</value>
+  </data>
+  <data name="userNameTextBox.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 24</value>
+  </data>
+  <data name="userNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>359, 24</value>
+  </data>
+  <data name="userNameTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="userNameTextBox.Text" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="&gt;&gt;userNameTextBox.Name" xml:space="preserve">
+    <value>userNameTextBox</value>
+  </data>
+  <data name="&gt;&gt;userNameTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;userNameTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;userNameTextBox.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11.25pt</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 108</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 20</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Отображение Интерфейса Chrome</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="guiCheckBox.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="guiCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="guiCheckBox.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="guiCheckBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACsAAAAeCAYAAAC16ufeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAOwSURBVFhH1ZfPS1RRFMfHHIUZg7JSZwYlkwTRjQQlLaRF
+        qxb1Hwito11FRBulRZJQSvmj1Fy0K9q0SikoEgOL0DCyaBP5Y6bJ1LH8Mb6Z2/e8ee9579zj+IOnTBe+
+        vHPPDDMfzj3n3PM8Qoj/RqwzW8U6s1WsU1ZJWeUWddRTXJpSrsfj9/p9Rd4c3yGS319Q5vUXhKBi2Pvh
+        y4f2cP9Lsn/T3isfpou+GKo+eay8oeVKeeNQf1l7NBrqNRKhPiEcPUym1GuIYE9cBB8siWBnTATuzYhA
+        W1hUdUyK6y9+iYFvf8RUbFUYSZE0DCMeifyce/X6zVjTjZtNNbUnQoDO4RhkaY61CFV6Ki70tQFiHFDz
+        UFyBlGFt0PuLItgxLwJ3o6Lk9g/R+naW4DIt+nQB8O86urovI+Je7DUmW8rGhiytO3vg8K0vjwFjaHCy
+        zKgmALuaiiiBtkVEfd+UGJlewk9ueiWgmbFPn5+cOn2mFrbCZUvZWKCFOO5HgFnV4GTJoN3LqaNHRAl0
+        Ese9zbUSDkdeArgetsJG0hyIaC9gFjW4dFmwwe4VHP9fM0fp6LcYUW4lEOEhpIQPtsKmbJCjlwCyrIFx
+        MnNVPv6wmaMurThyuBlPhc8xUPXVKJQoC5YuO6pmUaWiSlW/QTFtaaHoBtEl9sHUYdGeBlgwTmZU0QEo
+        BboWzKKi9uTyiqGtncOTgW0c2tzxkxxYFBalQOu02UddXkn04X750nBg0QHUZp9JUr4G2mdFyZ1Js+G7
+        vXBxRHDT7YWpwiJSSRaMUzosuoCb+Wov5O1vdIVCmBosD8Zp92DnAXsQpgqLNFhgwTjtXhrMIg30yKLA
+        hgGyuVTYnQITKLBhFJgzL6zBNrRcBUhMA+PkwO5o61pC67ooT2MOLC6FCgDQhMUDyiLYnb8URnApFMF0
+        GB3DGgmbAZN5gLEl5e0OXLeLuG6v4enwkZQNAWOQGWXh0mVH1/1BJolB5jm6QB5shU/ZWCNiHToDpUPm
+        YrNgzei6NyIKjIiDGBFrYCpsJM1hAR9HhAcBRaPi+jebDOykw7aGb1pxRPQZQI/A1rhIrJOArRzuQdFN
+        AGz9PDZzd9uvNbTonWyachRHv+7LI4l1kgiWnugS59HWnqIPzyE9TDANVgamCHfGDORwDEU3gS7xFW3t
+        I/rwB1wc7wE/CrhxNPzv1gtjJ6q+Kv3/ObHOjWRHnpfyKu7Fq3geNXYoF7dRHqKXD/lg+8kn99GNxDqz
+        VawzW8U6s1PC8w+OIQ6fdaVHpQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="guiCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>417, 101</value>
+  </data>
+  <data name="guiCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 36</value>
+  </data>
+  <data name="guiCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;guiCheckBox.Name" xml:space="preserve">
+    <value>guiCheckBox</value>
+  </data>
+  <data name="&gt;&gt;guiCheckBox.Type" xml:space="preserve">
+    <value>SteamBadgePriceParser.CustomCheckBox, SteamBadgePriceParser, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;guiCheckBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;guiCheckBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="sandboxCheckbox.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="sandboxCheckbox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="sandboxCheckbox.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="sandboxCheckbox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACsAAAAeCAYAAAC16ufeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAOwSURBVFhH1ZfPS1RRFMfHHIUZg7JSZwYlkwTRjQQlLaRF
+        qxb1Hwito11FRBulRZJQSvmj1Fy0K9q0SikoEgOL0DCyaBP5Y6bJ1LH8Mb6Z2/e8ee9579zj+IOnTBe+
+        vHPPDDMfzj3n3PM8Qoj/RqwzW8U6s1WsU1ZJWeUWddRTXJpSrsfj9/p9Rd4c3yGS319Q5vUXhKBi2Pvh
+        y4f2cP9Lsn/T3isfpou+GKo+eay8oeVKeeNQf1l7NBrqNRKhPiEcPUym1GuIYE9cBB8siWBnTATuzYhA
+        W1hUdUyK6y9+iYFvf8RUbFUYSZE0DCMeifyce/X6zVjTjZtNNbUnQoDO4RhkaY61CFV6Ki70tQFiHFDz
+        UFyBlGFt0PuLItgxLwJ3o6Lk9g/R+naW4DIt+nQB8O86urovI+Je7DUmW8rGhiytO3vg8K0vjwFjaHCy
+        zKgmALuaiiiBtkVEfd+UGJlewk9ueiWgmbFPn5+cOn2mFrbCZUvZWKCFOO5HgFnV4GTJoN3LqaNHRAl0
+        Ese9zbUSDkdeArgetsJG0hyIaC9gFjW4dFmwwe4VHP9fM0fp6LcYUW4lEOEhpIQPtsKmbJCjlwCyrIFx
+        MnNVPv6wmaMurThyuBlPhc8xUPXVKJQoC5YuO6pmUaWiSlW/QTFtaaHoBtEl9sHUYdGeBlgwTmZU0QEo
+        BboWzKKi9uTyiqGtncOTgW0c2tzxkxxYFBalQOu02UddXkn04X750nBg0QHUZp9JUr4G2mdFyZ1Js+G7
+        vXBxRHDT7YWpwiJSSRaMUzosuoCb+Wov5O1vdIVCmBosD8Zp92DnAXsQpgqLNFhgwTjtXhrMIg30yKLA
+        hgGyuVTYnQITKLBhFJgzL6zBNrRcBUhMA+PkwO5o61pC67ooT2MOLC6FCgDQhMUDyiLYnb8URnApFMF0
+        GB3DGgmbAZN5gLEl5e0OXLeLuG6v4enwkZQNAWOQGWXh0mVH1/1BJolB5jm6QB5shU/ZWCNiHToDpUPm
+        YrNgzei6NyIKjIiDGBFrYCpsJM1hAR9HhAcBRaPi+jebDOykw7aGb1pxRPQZQI/A1rhIrJOArRzuQdFN
+        AGz9PDZzd9uvNbTonWyachRHv+7LI4l1kgiWnugS59HWnqIPzyE9TDANVgamCHfGDORwDEU3gS7xFW3t
+        I/rwB1wc7wE/CrhxNPzv1gtjJ6q+Kv3/ObHOjWRHnpfyKu7Fq3geNXYoF7dRHqKXD/lg+8kn99GNxDqz
+        VawzW8U6s1PC8w+OIQ6fdaVHpQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="sandboxCheckbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>417, 143</value>
+  </data>
+  <data name="sandboxCheckbox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 36</value>
+  </data>
+  <data name="sandboxCheckbox.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;sandboxCheckbox.Name" xml:space="preserve">
+    <value>sandboxCheckbox</value>
+  </data>
+  <data name="&gt;&gt;sandboxCheckbox.Type" xml:space="preserve">
+    <value>SteamBadgePriceParser.CustomCheckBox, SteamBadgePriceParser, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;sandboxCheckbox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;sandboxCheckbox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11.25pt</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 150</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 20</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Режим Sandbox</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 91</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>452, 4</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11.25pt</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 195</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>238, 20</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Задержка между запросами (мс)</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="delayTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 12pt</value>
+  </data>
+  <data name="delayTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>372, 196</value>
+  </data>
+  <data name="delayTextBox.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 24</value>
+  </data>
+  <data name="delayTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 24</value>
+  </data>
+  <data name="delayTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="delayTextBox.Text" xml:space="preserve">
+    <value>100</value>
+  </data>
+  <data name="&gt;&gt;delayTextBox.Name" xml:space="preserve">
+    <value>delayTextBox</value>
+  </data>
+  <data name="&gt;&gt;delayTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;delayTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;delayTextBox.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="saveButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="saveButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9pt</value>
+  </data>
+  <data name="saveButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>372, 284</value>
+  </data>
+  <data name="saveButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 24</value>
+  </data>
+  <data name="saveButton.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="saveButton.Text" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="&gt;&gt;saveButton.Name" xml:space="preserve">
+    <value>saveButton</value>
+  </data>
+  <data name="&gt;&gt;saveButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;saveButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;saveButton.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="resetButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="resetButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 9pt</value>
+  </data>
+  <data name="resetButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 284</value>
+  </data>
+  <data name="resetButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 24</value>
+  </data>
+  <data name="resetButton.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="resetButton.Text" xml:space="preserve">
+    <value>Сбросить</value>
+  </data>
+  <data name="&gt;&gt;resetButton.Name" xml:space="preserve">
+    <value>resetButton</value>
+  </data>
+  <data name="&gt;&gt;resetButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;resetButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;resetButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11.25pt</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 240</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 20</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Язык</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="languageComboBox.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="languageComboBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
+  <data name="languageComboBox.Items" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="languageComboBox.Items1" xml:space="preserve">
+    <value>Русский</value>
+  </data>
+  <data name="languageComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>372, 241</value>
+  </data>
+  <data name="languageComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 25</value>
+  </data>
+  <data name="languageComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;languageComboBox.Name" xml:space="preserve">
+    <value>languageComboBox</value>
+  </data>
+  <data name="&gt;&gt;languageComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;languageComboBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;languageComboBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>473, 320</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>SettingsPage</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>
