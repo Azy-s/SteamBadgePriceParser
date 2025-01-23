@@ -2,31 +2,27 @@ using OpenQA.Selenium.Chrome;
 using SteamBadgePriceParser.Elements;
 using SteamBadgePriceParser.Properties;
 using System.Globalization;
-using System.Resources;
-using System.Runtime.InteropServices;
-using System.Runtime.Serialization;
-using System.Text.Json;
 
 namespace SteamBadgePriceParser
 {
     public partial class MainForm : Form
     {
-        private Parser BadgeParser;
-        private SettingsObject Settings;
-        public List<GameData> gameDatas = new List<GameData>();
+        private Parser badgeParser;
+        private SettingsObject settings;
+        public List<GameData> GameDatas = new List<GameData>();
         public MainForm()
         {
-            Settings = new SettingsObject();
+            settings = new SettingsObject();
             if (File.Exists("UserSettings.json"))
             {
-                Settings.Load("UserSettings.json");
+                settings.Load("UserSettings.json");
             }
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo(Settings.Language);
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(settings.Language);
 
             InitializeComponent();
             
-            BadgeParser = new Parser(Settings);
-            BadgeParser.StartDriver();
+            badgeParser = new Parser(settings);
+            badgeParser.StartDriver();
             listBox1.MouseWheelScroll += ScrollListBox_MouseWheelScroll;
             listBox2.MouseWheelScroll += ScrollListBox_MouseWheelScroll;
         }
@@ -49,10 +45,10 @@ namespace SteamBadgePriceParser
 
         public void SettingsLabel_Click(object sender, EventArgs e)
         {
-            SettingsPage sp = new SettingsPage(this, Settings);
+            SettingsPage sp = new SettingsPage(this, settings);
             sp.StartPosition = FormStartPosition.CenterParent;
             sp.ShowDialog(this);
-            Settings = sp.Settings;
+            settings = sp.Settings;
         }
 
         private void FileLabel_Click(object sender, EventArgs e)
@@ -76,7 +72,7 @@ namespace SteamBadgePriceParser
 
         private async void SteamCardExchange_Click(object sender, EventArgs e)
         {
-            BadgeParser.driver.Navigate().GoToUrl("https://www.steamcardexchange.net/index.php?badgeprices");
+            badgeParser.Driver.Navigate().GoToUrl("https://www.steamcardexchange.net/index.php?badgeprices");
             await Task.Delay(10);
         }
 
@@ -102,15 +98,15 @@ namespace SteamBadgePriceParser
 
         private async void ParseGameIds_Click(object sender, EventArgs e)
         {
-            gameDatas = BadgeParser.GetAppIds();
+            GameDatas = badgeParser.GetAppIds();
             UpdateListboxes();
-            vScrollBar1.Maximum = (gameDatas.Count - (listBox1.Height / listBox1.ItemHeight));
+            vScrollBar1.Maximum = (GameDatas.Count - (listBox1.Height / listBox1.ItemHeight));
             await Task.Delay(10);
         }
 
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
         {
-            BadgeParser.Dispose();
+            badgeParser.Dispose();
         }
 
         private async void ParseGamePrices_Click(object sender, EventArgs e)
@@ -121,17 +117,17 @@ namespace SteamBadgePriceParser
             customProgressBar1.Maximum = listBox1.Items.Count - 1;
             for (int i = 0; i < listBox1.Items.Count; i++)
             {
-                List<string> prices = BadgeParser.GetItemPrices(gameDatas[i].GetMarketUrl(foilCards.Checked));
+                List<string> prices = badgeParser.GetItemPrices(GameDatas[i].GetMarketUrl(foilCards.Checked));
                 float summ = 0;
                 foreach (string price in prices)
                 {
                     summ += float.Parse(GetNumberFromPrice(price).Replace('.', ','));
                 }
                 listBox2.Items.Add(summ);
-                gameDatas[i].price = summ;
+                GameDatas[i].price = summ;
                 customProgressBar1.Value = i;
                 ProgressLabel.Text = $"{i + 1}/{customProgressBar1.Maximum + 1}";
-                await Task.Delay(Settings.Delay);
+                await Task.Delay(settings.Delay);
             }
         }
 
@@ -153,8 +149,8 @@ namespace SteamBadgePriceParser
 
         public void UpdateListboxes()
         {
-            listBox1.DataSource = gameDatas.Select(g => g.name).ToArray();
-            listBox2.DataSource = gameDatas.Select((g) => g.price).ToArray();
+            listBox1.DataSource = GameDatas.Select(g => g.name).ToArray();
+            listBox2.DataSource = GameDatas.Select((g) => g.price).ToArray();
         }
 
         private bool sortedByName = false;
@@ -163,31 +159,31 @@ namespace SteamBadgePriceParser
         {
             if (!sortedByName)
             {
-                gameDatas = gameDatas.OrderBy(g => g.name).ToList();
+                GameDatas = GameDatas.OrderBy(g => g.name).ToList();
                 gameNameButton.Image = Resources.triangle_up;
             }
             else
             {
-                gameDatas = gameDatas.OrderByDescending(g => g.name).ToList();
+                GameDatas = GameDatas.OrderByDescending(g => g.name).ToList();
                 gameNameButton.Image = Resources.triangle_down;
             }
 
             sortedByName = !sortedByName;
 
-            listBox1.DataSource = gameDatas.Select(g => g.name).ToArray();
-            listBox2.DataSource = gameDatas.Select(g => g.price).ToArray();
+            listBox1.DataSource = GameDatas.Select(g => g.name).ToArray();
+            listBox2.DataSource = GameDatas.Select(g => g.price).ToArray();
         }
 
         private void gamePriceButton_Click(object sender, EventArgs e)
         {
             if (!sortedByPrice)
             {
-                gameDatas = gameDatas.OrderBy(g => g.price).ToList();
+                GameDatas = GameDatas.OrderBy(g => g.price).ToList();
                 gamePriceButton.Image = Resources.triangle_up;
             }
             else
             {
-                gameDatas = gameDatas.OrderByDescending(g => g.price).ToList();
+                GameDatas = GameDatas.OrderByDescending(g => g.price).ToList();
                 gamePriceButton.Image = Resources.triangle_down;
             }
             sortedByPrice = !sortedByPrice;
@@ -227,7 +223,7 @@ namespace SteamBadgePriceParser
             {
                 if (listBox1.GetSelected(i))
                 {
-                    gameDatas.RemoveAt(i);
+                    GameDatas.RemoveAt(i);
                 }
             }
             UpdateListboxes();
@@ -241,34 +237,34 @@ namespace SteamBadgePriceParser
             {
                 if (!listBox1.GetSelected(i))
                     continue;
-                List<string> prices = BadgeParser.GetItemPrices(gameDatas[i].GetMarketUrl(foilCards.Checked));
+                List<string> prices = badgeParser.GetItemPrices(GameDatas[i].GetMarketUrl(foilCards.Checked));
                 float summ = 0;
                 foreach (string price in prices)
                 {
                     summ += float.Parse(GetNumberFromPrice(price).Replace('.', ','));
                 }
-                gameDatas[i].price = summ;
+                GameDatas[i].price = summ;
                 customProgressBar1.Value = selectedItemsCounter;
                 ProgressLabel.Text = $"{selectedItemsCounter + 1}/{listBox1.SelectedItems.Count}";
                 selectedItemsCounter++;
-                await Task.Delay(Settings.Delay);
+                await Task.Delay(settings.Delay);
             }
-            listBox2.DataSource = gameDatas.Select(g => g.price).ToArray();
+            listBox2.DataSource = GameDatas.Select(g => g.price).ToArray();
         }
 
         private void marketToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            BadgeParser.driver.Navigate().GoToUrl(gameDatas[listBox1.SelectedIndex].GetMarketUrl(foilCards.Checked));
+            badgeParser.Driver.Navigate().GoToUrl(GameDatas[listBox1.SelectedIndex].GetMarketUrl(foilCards.Checked));
         }
 
         private void sCExchangeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            BadgeParser.driver.Navigate().GoToUrl(gameDatas[listBox1.SelectedIndex].GetExchangeUrl());
+            badgeParser.Driver.Navigate().GoToUrl(GameDatas[listBox1.SelectedIndex].GetExchangeUrl());
         }
 
         private void vScrollBar1_ValueChanged(object sender, EventArgs e)
         {
-            vScrollBar1.Maximum = gameDatas.Count - (listBox1.Size.Height / listBox1.ItemHeight);
+            vScrollBar1.Maximum = GameDatas.Count - (listBox1.Size.Height / listBox1.ItemHeight);
             listBox1.TopIndex = vScrollBar1.Value;
             listBox2.TopIndex = vScrollBar1.Value;
         }
@@ -305,8 +301,8 @@ namespace SteamBadgePriceParser
 
         private async void reloadChromeButton_Click(object sender, EventArgs e)
         {
-            BadgeParser.UpdateSettings(Settings);
-            BadgeParser.ReloadDriver();
+            badgeParser.UpdateSettings(settings);
+            badgeParser.ReloadDriver();
             await Task.Delay(100);
         }
     }

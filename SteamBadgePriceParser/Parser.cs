@@ -12,7 +12,7 @@ namespace SteamBadgePriceParser
     public class Parser
     {
         private ChromeOptions options = new ChromeOptions();
-        public ChromeDriver driver;
+        public ChromeDriver Driver;
         public string User { get; set; }
         public string ChromeDir { get; set; }
         public bool GUIMode { get; set; }
@@ -52,7 +52,7 @@ namespace SteamBadgePriceParser
         {
             try
             {
-                driver = new ChromeDriver(options);
+                Driver = new ChromeDriver(options);
                 return true;
             }
             catch (Exception ex) 
@@ -67,7 +67,7 @@ namespace SteamBadgePriceParser
             Thread.Sleep(100);
             try
             {
-                driver = new ChromeDriver(options);
+                Driver = new ChromeDriver(options);
                 return true;
             }
             catch (Exception ex)
@@ -94,10 +94,11 @@ namespace SteamBadgePriceParser
         {
             try
             {
-                driver.Close();
+                Driver.Close();
             }
-            catch { }
-            driver.Dispose();
+            catch(Exception ex) 
+            { }
+            Driver.Dispose();
         }
 
 
@@ -107,11 +108,11 @@ namespace SteamBadgePriceParser
             // Запуск 
             try
             {
-                driver.Navigate().GoToUrl(url);
+                Driver.Navigate().GoToUrl(url);
                 Thread.Sleep(Delay);
 
                 //поиска элемента по цене
-                var priceElements = driver.FindElements(By.XPath("//span[@class='normal_price']")); 
+                var priceElements = Driver.FindElements(By.XPath("//span[@class='normal_price']")); 
 
                 foreach (var element in priceElements)
                 {
@@ -133,11 +134,11 @@ namespace SteamBadgePriceParser
             try
             {
                 // Открытие страницы
-                driver.Navigate().GoToUrl("https://www.steamcardexchange.net/index.php?badgeprices");
+                Driver.Navigate().GoToUrl("https://www.steamcardexchange.net/index.php?badgeprices");
 
                 Thread.Sleep(1000);
 
-                var list = driver.FindElements(By.CssSelector("a[href*='/index.php?gamepage-appid-']"));
+                var list = Driver.FindElements(By.CssSelector("a[href*='/index.php?gamepage-appid-']"));
 
                 for (int i = 0; i < list.Count; i++)
                 {

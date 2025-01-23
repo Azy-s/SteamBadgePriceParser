@@ -52,7 +52,7 @@ namespace SteamBadgePriceParser.Elements
                 using (StreamWriter writer = new StreamWriter(saveFileDialog.FileName))
                 {
                     writer.WriteLine("name || price || id");
-                    foreach (var game in mainForm.gameDatas)
+                    foreach (var game in mainForm.GameDatas)
                     {
                         writer.WriteLine($"{game.name} || {game.price} || {game.id}");
                     }
@@ -68,7 +68,7 @@ namespace SteamBadgePriceParser.Elements
 
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
-                string json = JsonSerializer.Serialize(mainForm.gameDatas, new JsonSerializerOptions { WriteIndented = true });
+                string json = JsonSerializer.Serialize(mainForm.GameDatas, new JsonSerializerOptions { WriteIndented = true });
                 File.WriteAllText(saveFileDialog.FileName, json);
             }
         }
@@ -107,7 +107,7 @@ namespace SteamBadgePriceParser.Elements
                     }
                 }
             }
-            mainForm.gameDatas = gameDatas;
+            mainForm.GameDatas = gameDatas;
             mainForm.UpdateListboxes();
         }
 
@@ -123,7 +123,7 @@ namespace SteamBadgePriceParser.Elements
                 string json = File.ReadAllText(openFileDialog.FileName);
                 gameDatas = JsonSerializer.Deserialize<List<GameData>>(json);
             }
-            mainForm.gameDatas = gameDatas;
+            mainForm.GameDatas = gameDatas;
             mainForm.UpdateListboxes();
         }
 
