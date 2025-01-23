@@ -48,7 +48,7 @@ This application parses prices **directly through your Steam account**, taking i
 
 1. **Requirements:**
    - Windows 7+
-   - [.NET Framework 4.0](https://dotnet.microsoft.com/download/dotnet-framework) or newer
+   - [.NET Framework 8.0](https://dotnet.microsoft.com/download/dotnet-framework) or newer
    - Google Chrome (latest version)
    - Installed [ChromeDriver](https://chromedriver.chromium.org/) (compatible with your Chrome version)
 
