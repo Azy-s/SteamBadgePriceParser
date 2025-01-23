@@ -25,7 +25,7 @@
 
 | ![Main Interface](screenshot1.png) | ![Settings Menu](screenshot2.png) |
 |:--:|:--:|
-| *Main Interface* | *Settings* |
+| *Главный экран* | *Настройки* |
 
 ## ✨ Особенности
 
